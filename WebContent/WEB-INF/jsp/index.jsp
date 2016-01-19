@@ -27,7 +27,8 @@ input {
 			<p>Search result for "${searchterm}" : ${results.size()}</p>
 		</c:if>
 		<c:forEach items="${results}" var="r" varStatus="">
-			<p>${r.link} ${r.occur}</p>
+			<h6><a href="CORPUS/${r.link}">${r.link}</a></h6>
+			<p>${r.occur}</p>
 		</c:forEach>
 	</div>
 </body>
